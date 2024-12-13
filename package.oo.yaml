@@ -7,3 +7,8 @@ scripts:
 icon: ./icon.png
 dependencies:
   {}
+name: oomol-transform
+displayName: Transform
+description: Common data conversion.
+releaseType: package
+releaseNotes: init
