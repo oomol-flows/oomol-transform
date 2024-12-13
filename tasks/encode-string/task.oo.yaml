@@ -1,0 +1,30 @@
+inputs_def:
+  - handle: string
+    description: Input
+    json_schema:
+      type: string
+  - handle: encoding
+    json_schema:
+      enum:
+        - utf8
+        - ascii
+        - hex
+      ui:options:
+        labels:
+          - UTF-8
+          - ASCII
+          - HEX
+    value: utf8
+outputs_def:
+  - handle: binary
+    description: Output
+    json_schema:
+      contentMediaType: oomol/bin
+ui:
+  default_width: 450
+executor:
+  name: python
+  options:
+    spawn: false
+    entry: main.py
+title: Encode string
