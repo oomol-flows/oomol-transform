@@ -19,3 +19,34 @@ nodes:
             output_handle: binary
       - handle: encoding
         value: utf8
+  - task: self::stringify-json
+    title: "Stringify JSON #1"
+    node_id: stringify-json#1
+    inputs_from:
+      - handle: handle1
+        value: ""
+      - handle: spaces
+      - handle: indent
+        value: 2
+      - handle: json
+        schema_overrides:
+          - schema:
+              type: object
+          - path: field1
+            schema:
+              type: string
+          - path: field2
+            schema:
+              type: integer
+        value:
+          field1: foobar
+          field2: 100
+  - task: self::parse-json
+    title: "Parse JSON #1"
+    node_id: parse-json#1
+    inputs_from:
+      - handle: in
+      - handle: string
+        from_node:
+          - node_id: stringify-json#1
+            output_handle: string

@@ -1,0 +1,24 @@
+inputs_def:
+  - handle: json
+    json_schema:
+      {}
+    value: ""
+  - handle: indent
+    json_schema:
+      type: integer
+      minimum: 0
+    value: 0
+    nullable: false
+outputs_def:
+  - handle: string
+    description: Output
+    json_schema:
+      type: string
+ui:
+  default_width: 450
+executor:
+  name: python
+  options:
+    spawn: false
+    entry: main.py
+title: Stringify JSON

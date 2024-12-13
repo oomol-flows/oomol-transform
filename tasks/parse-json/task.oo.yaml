@@ -1,0 +1,18 @@
+inputs_def:
+  - handle: string
+    description: Input
+    json_schema:
+      type: string
+outputs_def:
+  - handle: json
+    description: Output
+    json_schema:
+      {}
+ui:
+  default_width: 450
+executor:
+  name: python
+  options:
+    spawn: false
+    entry: main.py
+title: Parse JSON
