@@ -1,0 +1,21 @@
+{
+  "nodes": {
+    "encode-string#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 249,
+          "y": 190
+        }
+      }
+    },
+    "decode-string#1": {
+      "rfNode": {
+        "position": {
+          "x": 819,
+          "y": 190
+        }
+      }
+    }
+  }
+}

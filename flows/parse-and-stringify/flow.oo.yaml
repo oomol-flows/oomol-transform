@@ -1,0 +1,27 @@
+nodes:
+  - task: self::stringify-json
+    title: "Stringify JSON #1"
+    node_id: stringify-json#1
+    inputs_from:
+      - handle: json
+        value:
+          foobar: hello world
+          foz: 2024
+        schema_overrides:
+          - schema:
+              type: object
+          - path:
+              - field1
+              - foobar
+            schema:
+              type: string
+      - handle: indent
+        value: 0
+  - task: self::parse-json
+    title: "Parse JSON #1"
+    node_id: parse-json#1
+    inputs_from:
+      - handle: string
+        from_node:
+          - node_id: stringify-json#1
+            output_handle: string
