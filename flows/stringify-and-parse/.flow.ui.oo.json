@@ -1,0 +1,40 @@
+{
+  "nodes": {
+    "stringify-json#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 246,
+          "y": 145
+        }
+      },
+      "sections": {
+        "inputs": {
+          "collapsed": {
+            "json": {
+              "[\"field1\"]": false
+            }
+          }
+        }
+      }
+    },
+    "parse-json#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 807,
+          "y": 145
+        }
+      }
+    },
+    "read-file#3": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 255,
+          "y": 480
+        }
+      }
+    }
+  }
+}

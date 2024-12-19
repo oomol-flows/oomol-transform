@@ -1,0 +1,30 @@
+{
+  "nodes": {
+    "stringify-json#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 165,
+          "y": 107
+        }
+      },
+      "sections": {
+        "inputs": {
+          "collapsed": {
+            "json": {
+              "[]": false
+            }
+          }
+        }
+      }
+    },
+    "parse-json#1": {
+      "rfNode": {
+        "position": {
+          "x": 677,
+          "y": 107
+        }
+      }
+    }
+  }
+}
