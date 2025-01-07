@@ -24,3 +24,5 @@ outputs_def:
     json_schema:
       type: string
 title: Decode string
+ui:
+  default_width: 350

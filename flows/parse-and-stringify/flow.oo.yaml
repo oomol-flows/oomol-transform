@@ -7,16 +7,10 @@ nodes:
         value:
           foobar: hello world
           foz: 2024
-        schema_overrides:
-          - schema:
-              type: object
-          - path:
-              - field1
-              - foobar
-            schema:
-              type: string
       - handle: indent
         value: 0
+      - handle: ensure_ascii
+        value: false
   - task: self::parse-json
     title: "Parse JSON #1"
     node_id: parse-json#1
