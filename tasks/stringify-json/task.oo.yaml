@@ -9,13 +9,17 @@ inputs_def:
       minimum: 0
     value: 0
     nullable: false
+  - handle: ensure_ascii
+    json_schema:
+      type: boolean
+    value: false
 outputs_def:
   - handle: string
     description: Output
     json_schema:
       type: string
 ui:
-  default_width: 450
+  default_width: 350
 executor:
   name: python
   options:

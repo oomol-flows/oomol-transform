@@ -9,7 +9,7 @@ outputs_def:
     json_schema:
       {}
 ui:
-  default_width: 450
+  default_width: 350
 executor:
   name: python
   options:

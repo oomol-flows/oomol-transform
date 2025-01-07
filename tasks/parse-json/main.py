@@ -1,6 +1,6 @@
 import json
 
-def main(inputs: dict):
+def main(params: dict):
   return { 
-    "json": json.loads(inputs["string"])
+    "json": json.loads(params["string"])
    }
