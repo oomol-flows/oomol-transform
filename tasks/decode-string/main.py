@@ -1,8 +1,8 @@
 from typing import Literal
 
-def main(inputs: dict):
-  binary: bytes = inputs["binary"]
-  encoding: Literal["utf8", "ascii", "hex"] = inputs["encoding"]
+def main(params: dict):
+  binary: bytes = params["binary"]
+  encoding: Literal["utf8", "ascii", "hex"] = params["encoding"]
   return { 
     "string": binary.decode(encoding)
   }
