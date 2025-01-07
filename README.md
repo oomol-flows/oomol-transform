@@ -20,6 +20,8 @@ Encode the data passed in the `json` field into a JSON-formatted string and retu
 
 `indent` indicates how many spaces are used for indentation in the final JSON string. If the value is 0, the JSON is formatted in a compact format.
 
+`ensure_ascii` indicates whether non-ASCII characters are escaped in the final JSON string.
+
 ## Parse JSON
 
 Parse the string passed in the `string` field in JSON format and return it in the `json` field.
