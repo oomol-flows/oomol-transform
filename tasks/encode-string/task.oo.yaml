@@ -113,8 +113,8 @@ outputs_def:
 ui:
   default_width: 350
 executor:
-  name: python
+  name: nodejs
   options:
+    entry: index.ts
     spawn: false
-    entry: main.py
 title: Encode string

@@ -1,7 +1,7 @@
 executor:
-  name: python
+  name: nodejs
   options:
-    entry: main.py
+    entry: index.ts
     spawn: false
 inputs_def:
   - handle: binary

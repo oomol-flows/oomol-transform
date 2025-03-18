@@ -1,3 +1,9 @@
 {
-  "private": true
+  "private": true,
+  "dependencies": {
+    "jschardet": "^3.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10"
+  }
 }
