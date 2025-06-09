@@ -1,4 +1,4 @@
-version: 0.0.3
+version: 0.0.4
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
@@ -10,5 +10,5 @@ dependencies:
 name: oomol-transform
 displayName: Transform
 description: Common data conversion.
-releaseNotes: support auto recognize binary encoding format.
+releaseNotes: migrate to poetry.
 repository: https://github.com/oomol-flows/oomol-transform
