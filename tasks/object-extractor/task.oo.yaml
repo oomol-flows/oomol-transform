@@ -1,0 +1,18 @@
+executor:
+  name: python
+  options:
+    entry: __init__.py
+inputs_def:
+  - handle: object
+    json_schema:
+      type: object
+      properties:
+        {}
+  - handle: disable_additional_properties
+    json_schema:
+      type: boolean
+    value: false
+outputs_def:
+  []
+title: Extract object
+additional_outputs: true
