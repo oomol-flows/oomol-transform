@@ -49,6 +49,10 @@ def main(params: Inputs, context: Context) -> Outputs:
 
   outputs_object: dict[str, Any] = {}
   for key in output_keys:
-    if key in object:
-      outputs_object[key] = object[key]
+    if key not in object:
+      continue
+    value = object[key]
+    if value is None and context.outputs_def[key]["nullable"]:
+      continue
+    outputs_object[key] = value
   return outputs_object
