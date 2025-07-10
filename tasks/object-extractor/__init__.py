@@ -23,7 +23,14 @@ def main(params: Inputs, context: Context) -> Outputs:
     handle = context.outputs_def[key]
     if not handle["nullable"]:
       outputs_required.append(key)
-    outputs_properties[key] = handle["json_schema"]
+    json_schema: dict[str, Any] | None = handle["json_schema"]
+    if json_schema is None:
+      json_schema = {}
+    outputs_properties[key] = json_schema
+
+    # TODO: oocana 的 bug 导致会多一个 contentMediaType 字段
+    #       等待修复后删除如下防御性代码
+    json_schema.pop("contentMediaType", None)
 
   try:
     validate(
