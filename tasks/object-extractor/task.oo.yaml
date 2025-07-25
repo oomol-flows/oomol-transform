@@ -9,6 +9,9 @@ inputs_def:
       properties:
         {}
   - handle: disable_additional_properties
+    description: If enabled, the fields in the object extracted this time are
+      exactly in the list. If there are fields outside the list, an error will
+      be reported.
     json_schema:
       type: boolean
     value: false
@@ -16,3 +19,4 @@ outputs_def:
   []
 title: Extract object
 additional_outputs: true
+description: Extract the object and split it into specific fields
