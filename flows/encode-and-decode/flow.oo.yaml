@@ -17,3 +17,4 @@ nodes:
             output_handle: binary
       - handle: encoding
         value: utf_8
+title: Encode & Decode

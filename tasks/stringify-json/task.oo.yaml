@@ -3,6 +3,8 @@ inputs_def:
     json_schema:
       {}
     value: ""
+  - group: more
+    collapsed: true
   - handle: indent
     json_schema:
       type: integer

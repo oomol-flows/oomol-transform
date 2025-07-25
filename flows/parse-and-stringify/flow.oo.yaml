@@ -19,3 +19,4 @@ nodes:
         from_node:
           - node_id: stringify-json#1
             output_handle: string
+title: Parse & Stringify
