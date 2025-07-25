@@ -8,6 +8,8 @@ inputs_def:
     json_schema:
       contentMediaType: oomol/bin
   - handle: encoding
+    description: The decoding format of the string, if not filled, it will be
+      automatically recognized
     json_schema:
       enum:
         - utf_8
@@ -112,9 +114,12 @@ inputs_def:
     nullable: true
 outputs_def:
   - handle: string
+    description: Decoded string
     json_schema:
       type: string
   - handle: encoding
+    description: String encoding format. If not specified before, this is the format
+      automatically recognized.
     json_schema:
       enum:
         - utf_8
@@ -218,3 +223,4 @@ outputs_def:
 title: Decode string
 ui:
   default_width: 350
+description: Decode binaray into a string

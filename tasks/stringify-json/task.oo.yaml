@@ -6,12 +6,16 @@ inputs_def:
   - group: more
     collapsed: true
   - handle: indent
+    description: If it is 0, there is no carriage return and indentation. If it is
+      greater than 0, there is a carriage return, and the number of spaces for
+      indentation is the same as this number.
     json_schema:
       type: integer
       minimum: 0
     value: 0
     nullable: false
   - handle: ensure_ascii
+    description: If on, all characters are ASCII (non-ASCII characters are escaped).
     json_schema:
       type: boolean
     value: false
@@ -21,7 +25,7 @@ outputs_def:
     json_schema:
       type: string
 ui:
-  default_width: 350
+  default_width: 395.15625
 executor:
   name: python
   options:

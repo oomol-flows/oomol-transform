@@ -118,3 +118,4 @@ executor:
     spawn: false
     entry: main.py
 title: Encode string
+description: Encode a string as binary
