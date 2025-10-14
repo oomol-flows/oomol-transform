@@ -1,4 +1,4 @@
-version: 0.0.7
+version: 0.0.8
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
@@ -8,7 +8,7 @@ icon: ./icon.png
 dependencies:
   {}
 name: oomol-transform
-displayName: Transform
-description: Common data conversion.
+displayName: "%display-name%"
+description: "%description%"
 releaseNotes: add groups & descriptions
 repository: https://github.com/oomol-flows/oomol-transform

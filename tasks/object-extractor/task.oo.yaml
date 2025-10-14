@@ -4,19 +4,18 @@ executor:
     entry: __init__.py
 inputs_def:
   - handle: object
+    description: "%object-to-extract-fields-from%"
     json_schema:
       type: object
       properties:
         {}
   - handle: disable_additional_properties
-    description: If enabled, the fields in the object extracted this time are
-      exactly in the list. If there are fields outside the list, an error will
-      be reported.
+    description: "%if-enabled-the-fields-in-the-object-extracted-this-time-are-exac%"
     json_schema:
       type: boolean
     value: false
 outputs_def:
   []
-title: Extract object
+title: "%extract-object%"
 additional_outputs: true
-description: Extract the object and split it into specific fields
+description: "%extract-the-object-and-split-it-into-specific-fields%"

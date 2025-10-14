@@ -1,9 +1,10 @@
 inputs_def:
   - handle: string
-    description: Input
+    description: "%string-to-encode%"
     json_schema:
       type: string
   - handle: encoding
+    description: "%encoding-format-to-use%"
     json_schema:
       enum:
         - utf_8
@@ -107,7 +108,7 @@ inputs_def:
     value: utf_8
 outputs_def:
   - handle: binary
-    description: Output
+    description: Encoded binary data
     json_schema:
       contentMediaType: oomol/bin
 ui:
@@ -117,5 +118,5 @@ executor:
   options:
     spawn: false
     entry: main.py
-title: Encode string
-description: Encode a string as binary
+title: "%encode-string%"
+description: "%encode-a-string-as-binary%"

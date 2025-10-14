@@ -7,7 +7,7 @@ import typing
 class Inputs(typing.TypedDict):
   string: str
 class Outputs(typing.TypedDict):
-  json: typing.Any
+  json: typing.NotRequired[typing.Any]
 #endregion
 
 def main(params: Inputs) -> Outputs:

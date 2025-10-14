@@ -1,6 +1,6 @@
 nodes:
   - task: self::encode-string
-    title: "Encode string #1"
+    title: "%encode-string-1%"
     node_id: encode-string#1
     inputs_from:
       - handle: string
@@ -8,7 +8,7 @@ nodes:
       - handle: encoding
         value: utf_8
   - task: self::decode-string
-    title: "Decode string #1"
+    title: "%decode-string-1%"
     node_id: decode-string#1
     inputs_from:
       - handle: binary
@@ -17,4 +17,5 @@ nodes:
             output_handle: binary
       - handle: encoding
         value: utf_8
-title: Encode & Decode
+title: "%encode-decode%"
+description: "%encodes-a-string-to-binary-and-then-decodes-it-back-to-a-string%"

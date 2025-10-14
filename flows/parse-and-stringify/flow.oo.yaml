@@ -1,6 +1,6 @@
 nodes:
   - task: self::stringify-json
-    title: "Stringify JSON #1"
+    title: "%stringify-json-1%"
     node_id: stringify-json#1
     inputs_from:
       - handle: json
@@ -12,11 +12,12 @@ nodes:
       - handle: ensure_ascii
         value: false
   - task: self::parse-json
-    title: "Parse JSON #1"
+    title: "%parse-json-1%"
     node_id: parse-json#1
     inputs_from:
       - handle: string
         from_node:
           - node_id: stringify-json#1
             output_handle: string
-title: Parse & Stringify
+title: "%parse-stringify%"
+description: "%converts-a-json-object-to-a-string-and-then-parses-it-back-to-js%"

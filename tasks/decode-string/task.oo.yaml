@@ -5,11 +5,11 @@ executor:
     spawn: false
 inputs_def:
   - handle: binary
+    description: "%binary-data-to-decode%"
     json_schema:
       contentMediaType: oomol/bin
   - handle: encoding
-    description: The decoding format of the string, if not filled, it will be
-      automatically recognized
+    description: "%the-decoding-format-of-the-string-if-not-filled-it-will-be-autom%"
     json_schema:
       enum:
         - utf_8
@@ -220,7 +220,7 @@ outputs_def:
         - utf_16_be
         - utf_16_le
         - utf_7
-title: Decode string
+title: "%decode-string%"
 ui:
   default_width: 350
-description: Decode binaray into a string
+description: "%decode-binaray-into-a-string%"
