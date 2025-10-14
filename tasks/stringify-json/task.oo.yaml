@@ -31,4 +31,4 @@ executor:
   options:
     spawn: false
     entry: main.py
-title: Stringify JSON
+title: 字符串化 JSON
