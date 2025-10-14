@@ -7,7 +7,7 @@ class Inputs(typing.TypedDict):
   indent: int
   ensure_ascii: bool
 class Outputs(typing.TypedDict):
-  string: str
+  string: typing.NotRequired[str]
 #endregion
 
 def main(params: Inputs) -> Outputs:

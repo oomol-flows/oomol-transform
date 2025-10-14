@@ -1,11 +1,11 @@
 inputs_def:
   - handle: string
-    description: Input
+    description: "%json-string-to-parse%"
     json_schema:
       type: string
 outputs_def:
   - handle: json
-    description: Output
+    description: Parsed JSON object
     json_schema:
       {}
 ui:
@@ -15,4 +15,5 @@ executor:
   options:
     spawn: false
     entry: main.py
-title: Parse JSON
+title: "%parse-json%"
+description: "%parse-a-json-string-into-a-json-object%"
